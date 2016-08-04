@@ -1,0 +1,169 @@
+﻿@charset "utf-8";
+/* HEADER */
+.wrapper{background:url("../images/bg/body_bg.png") repeat 0 120px;}
+.header{position:relative;width:100%;height:118px;border-bottom:2px solid #277ecc;background:#000715 url("../images/bg/header_bg.png") no-repeat center 0;}
+.header:after{position:absolute;left:0;bottom:-6px;z-index:200;content:"";width:100%;height:4px;background:url("../images/bg/header_bottom_bg.png") repeat-x;}
+.ie7 .header{z-index:100;}
+.header .hSection{position:relative;width:940px;margin:0 auto;}
+.ball{position:absolute;right:-128px;z-index:50;width:215px;height:108px;display:block;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter: alpha(opacity=50); opacity:.5;}
+.ball.Top{top:10px;background:url("../images/bg/box_bg.png") no-repeat 0 -114px;}
+.ball.Bottom{top:120px;background:url("../images/bg/box_bg.png") no-repeat 0 -232px;}
+.header .topArea{*zoom:1;}
+.header .topArea:after{content:"";display:block;clear:both;}
+.header .logo{width:117px;height:47px;margin:24px 0 0;float:left;position:relative;}
+.header .logo a{display:block;}
+.header .logo a img{width:100%;vertical-align:top;}
+.header .logo .bata{position:absolute;right:-40px;top:-14px;}
+.header .sideArea{position:relative;z-index:200;width:558px;float:right;color:#fff;margin-top:24px;overflow:hidden;}
+.header .idSearch{width:367px;float:left;}
+.header .idSearch p{border-bottom:1px solid #277ecc;padding-bottom:5px;text-align:right;}
+.header .idSearch a{color:#2c90db;font-size:11px;}
+.header .idSearch input[type="text"],
+.header .idSearch input[type="password"]{border:1px solid #e1e1e1;width:150px;height:24px;line-height:24px;font-size:12px; color:#474747;padding:0 5px;border:0;background:url("../images/bg/box_bg.png") no-repeat -591px -393px;}
+.header .idSearch ul{overflow:hidden;margin-top:10px;}
+.header .idSearch ul li{float:left;}
+.header .idSearch ul li:first-child + li{margin-left:10px;}
+.header .idSearch label{font-family:Helvetica;font-size:11px;}
+.header .login{position:relative;/*width:174px;*/float:right;margin-top:20px;}
+.header .login ul {overflow:hidden;}
+.header .login ul li{float:left;padding-left:7px;margin-left:7px;background:url("../images/bg/list_ling_bg.png") no-repeat 0 center;}
+.header .login ul li:first-child{padding-left:0;margin-left:0;}
+.header .login ul li a{color:#fff;font-size:11px;height:30px;line-height:30px;letter-spacing:-1px;}
+.header .login input[type="text"]{height:16px;line-height:16px;padding:2px 5px;border:0;background:url("../images/bg/box_bg.png") no-repeat 0 -17px;padding-left:24px;}
+
+/* GNB */
+.navArea{position:absolute;left:157px;top:85px;width:836px;height:34px;z-index:400;}
+.navArea .home{position:absolute;left:-75px;top:10px;width:61px;height:15px;display:block;background:url("../images/txt/home.png") no-repeat 0 0;}
+.gnb{*zoom:1;background:url("../images/bg/gnb_bg.png") no-repeat -16px 0;}
+.gnb:after{content:"";display:block;clear:both;}
+.gnb > li{float:left;position:relative;}
+.gnb > li > a{position:relative;z-index:300;width:167px;height:45px;overflow:hidden;display:block;background:url("../images/bg/gnb_menu.png") no-repeat;text-indent:-9999em;}
+.gnb > li > ul{position:relative;left:0;top:-10px;width:154px;display:none;z-index:200;}
+.gnb > li.on > ul{display:block;}
+.gnb > li > ul > li > a{width:154px;height:29px;line-height:29px;text-align:center;display:block;overflow:hidden;border-top:1px solid #fff;color:#003c5b;font-family:"nanumbd";}
+.gnb > li > ul > li:first-child > a{border-top:0;}
+.gnb > li.g02{left:-13px;}
+.gnb > li.g03{left:-26px;}
+.gnb > li.g04{left:-39px;}
+.gnb > li.g05{left:-52px;}
+.gnb > li.g01 ul{background:#fa4647;border-bottom:1px solid #9e0707;}
+.gnb > li.g02 ul{background:#c8d7de;border-bottom:1px solid #8a999e;}
+.gnb > li.g03 ul{background:#76e2f4;border-bottom:1px solid #52abba;}
+.gnb > li.g04 ul{background:#f9cf48;border-bottom:1px solid #d8a20b;}
+.gnb > li.g05 ul{background:#bdf46c;border-bottom:1px solid #93be47;}
+.gnb > li.g01 ul li{border-top:1px solid #9e0707;}
+.gnb > li.g02 ul li{border-top:1px solid #8a999e;}
+.gnb > li.g03 ul li{border-top:1px solid #52abba;}
+.gnb > li.g04 ul li{border-top:1px solid #d8a20b;}
+.gnb > li.g05 ul li{border-top:1px solid #93be47;}
+.gnb > li > ul > li:first-child{border-top:0;}
+
+/* 1뎁스 */
+.gnb > li.g01 > a{background-position:0 0;} /* Legend 칼럼 */
+.gnb > li.g02 > a{background-position:-167px 0;} /* Data Factory */
+.gnb > li.g03 > a{background-position:-336px 0;} /* 2i스페셜 */
+.gnb > li.g04 > a{background-position:-503px 0;} /* 커뮤니티 */
+.gnb > li.g05 > a{background-position:-670px 0;} /* 야구광장  */
+.gnb > li.g01.on > a{background-position:0 -45px;}
+.gnb > li.g02.on > a{background-position:-167px -45px;}
+.gnb > li.g03.on > a{background-position:-336px -45px;}
+.gnb > li.g04.on > a{background-position:-503px -45px;}
+.gnb > li.g05.on > a{background-position:-670px -45px;}
+
+/* CONTAINER */
+.container{position:relative;width:940px;margin:0 auto;background:#fff;z-index:50;}
+.titleArea{position:relative;width:940px;height:110px;clear:both;background:url("../images/img/sub_title.jpg") no-repeat;}
+.titleArea h2.txt{position:absolute;left:40px;top:44px;height:23px;padding:1px 0;color:#003b5b;font-family:"nanumbd";font-size:20px;}
+.titleArea .location{position:absolute;top:20px;left:40px;padding-left:20px;background:url("../images/img/icon.png") no-repeat -69px -47px;color:#074668;font-size:11px;}
+.titleArea.titbg01{background-position:0 0;} 
+.titleArea.titbg02{background-position:0 -110px;} 
+.titleArea.titbg03{background-position:0 -220px;} 
+.titleArea.titbg04{background-position:0 -330px;} 
+.titleArea.titbg05{background-position:0 -440px;} 
+.titleArea.titbg06{background-position:0 -550px;} 
+
+.contentWrap01{background:#fff url("../images/bg/container_line.gif") repeat-y 100% 0;*zoom:1;margin-top:15px;padding-left:20px;}
+.contentWrap01:after{content:"";display:block;clear:both;}
+.contentWrap02{min-height:900px;padding:20px 20px 70px;background:#fff;}
+.contentWrap03{position:relative;min-height:900px;padding:20px 0 70px;background:#fff;}
+.contentSection{width:654px;min-height:900px;background:#fff;padding-bottom:70px;}
+.sideSection{width:246px;border-top:1px solid #c9c9ca;padding-bottom:30px;}
+
+.subMenu{position:absolute;left:0;bottom:0;width:100%;overflow:hidden;}
+.subMenu li{float:left;}
+.subMenu li a{display:block;padding:8px 8px;color:#fff;font-family:"nanum";}
+.subMenu li.on a{font-family:"nanumbd";}
+.subMenu li:first-child a{padding-left:30px;}
+.subMenu.navy li{background:#386b8a;}
+.subMenu.navy li a{background:url("../images/bg/sub_menu_line6.jpg") no-repeat left center;}
+.subMenu.navy li.on a{color:#b0d5ec;}
+.subMenu.navy li:first-child a{background:none;}
+.subMenu.yellow li{background:#f7cc19;}
+.subMenu.yellow li a{background:url("../images/bg/sub_menu_line.jpg") no-repeat left center;}
+.subMenu.yellow li.on a{color:#aa8137;}
+.subMenu.yellow li:first-child a{background:none;}
+.subMenu.blue li{background:#86d6f6;}
+.subMenu.blue li a{background:url("../images/bg/sub_menu_line3.jpg") no-repeat left center;}
+.subMenu.blue li.on a{color:#1385b4;}
+.subMenu.blue li:first-child a{background:none;}
+.subMenu.gray li{background:#c2cfd3;}
+.subMenu.gray li a{background:url("../images/bg/sub_menu_line4.jpg") no-repeat left center;}
+.subMenu.gray li.on a{color:#7d8689;}
+.subMenu.gray li:first-child a{background:none;}
+.subMenu.green li{background:#9ed839;}
+.subMenu.green li a{background:url("../images/bg/sub_menu_line5.jpg") no-repeat left center;}
+.subMenu.green li.on a{color:#698d49;}
+.subMenu.green li:first-child a{background:none;}
+
+.subtit01{width:84px;background:url("../images/txt/sub_title.png") no-repeat -19px -415px;} /* 이용약관 */
+.subtit02{width:83px;background:url("../images/txt/sub_title.png") no-repeat -19px -271px;} /* 회원가입 */
+.subtit03{width:202px;background:url("../images/txt/sub_title.png") no-repeat -19px -307px;} /* 아이디비밀번호찾기 */
+.subtit04{width:127px;background:url("../images/txt/sub_title.png") no-repeat -19px -343px;} /* 회원정보수정 */
+.subtit05{width:135px;height:24px;background:url("../images/txt/sub_title.png") no-repeat -19px -31px;} /* 레전드칼럼 */
+.subtit06{width:61px;background:url("../images/txt/sub_title.png") no-repeat -215px -102px;} /* 기록실 */
+.subtit07{width:142px;background:url("../images/txt/sub_title.png") no-repeat -695px -32px;} /* 도전레전드 */
+.subtit08{width:139px;background:url("../images/txt/sub_title.png") no-repeat -695px -62px;} /* 베스트게시판 */
+.subtit09{width:160px;background:url("../images/txt/sub_title.png") no-repeat -695px -92px;} /* BTL분석게시판 */
+.subtit10{width:116px;background:url("../images/txt/sub_title.png") no-repeat -695px -122px;} /* 자유게시판 */
+.subtit11{width:116px;background:url("../images/txt/sub_title.png") no-repeat -695px -152px;} /* 야한갤러리 */
+.subtit12{width:90px;background:url("../images/txt/sub_title.png") no-repeat -695px -183px;} /* 공지사항 */
+.subtit13{width:60px;background:url("../images/txt/sub_title.png") no-repeat -341px -296px;} /* POLL */
+.subtit14{width:85px;background:url("../images/txt/sub_title.png") no-repeat -18px -380px;} /* 사이트맵 */
+.subtit15{width:62px;background:url("../images/txt/sub_title.png") no-repeat -214px -66px;} /* 팀순위 */
+.subtit16{width:112px;background:url("../images/txt/sub_title.png") no-repeat -342px -386px;} /* 나의한마디 */
+.subtit17{width:166px;background:url("../images/txt/sub_title.png") no-repeat -342px -415px;} /* Be the Legend */
+.subtit18{width:170px;background:url("../images/txt/sub_title.png") no-repeat -20px -452px;} /* 개인정보보호정책 */
+.subtit19{width:86px;background:url("../images/txt/sub_title.png") no-repeat -19px -415px;} /* 이용약관 */
+.subtit20{width:63px;background:url("../images/txt/sub_title.png") no-repeat -341px -265px;} /* 이벤트 */
+.subtit21{width:127px;background:url("../images/txt/sub_title.png") no-repeat -411px -92px;} /* BTL 추천픽 */
+.subtit22{width:85px;background:url("../images/txt/sub_title.png") no-repeat -411px -122px;} /* 승부예측 */
+.subtit23{width:161px;background:url("../images/txt/sub_title.png") no-repeat -213px -139px;} /*  팀타임라인 */
+.subtit24{width:85px;background:url("../images/txt/sub_title.png") no-repeat -18px -487px;} /*  광고문의 */
+.subtit25{width:109px;background:url("../images/txt/sub_title.png") no-repeat -218px -180px;} /*  KBO 라이브 */
+.subtit26{width:220px;background:url("../images/txt/sub_title.png") no-repeat -412px -184px;} /*  Player of the game */
+.subtit27{width:44px;background:url("../images/txt/sub_title.png") no-repeat -413px -63px;} /*  리뷰 */
+
+/* FOOTER */
+.footer{height:70px;padding:25px 0 38px;background:#010c1d;}
+.footer .footArea{position:relative;z-index:100;width:940px;margin:0 auto;background:url("../images/txt/foot_logo.png") no-repeat 0 0;}
+.footer ul{overflow:hidden;margin-left:186px;}
+.footer ul li{float:left;margin-left:11px;padding-left:11px;background:url("../images/bg/list_ling_bg2.gif") no-repeat 0 2px;}
+.footer ul li:first-child{margin-left:0;padding-left:0;background:none;}
+.footer ul li a{display:block;color:#666;font-weight:bold;padding:1px 0;}
+.footer p{margin:14px 0 0 186px;line-height:18px;color:#666;}
+.footer .sports2iLink{position:absolute;top:25px;right:25px;}
+
+/* QUICKMENU */
+.quickMenu{position:absolute;right:-110px;top:138px;z-index:300;width:105px;height:228px;background:url("../images/bg/quick_bottom.png") no-repeat 0 bottom;}
+.quickMenu dl{padding:0 7px;background:url("../images/bg/quick_shadow.png") repeat 0 0;}
+.quickMenu dl dt{position:relative;height:29px;line-height:29px;text-align:center;border-top:1px solid #60ace6;border-bottom:1px solid #1f6c9b;background:#277ecc url("../images/txt/normal_title.png") no-repeat 12px -296px;color:#fff;font-family:"nanum";}
+.quickMenu dl dt span{position:absolute;left:50%;bottom:-5px;width:8px;height:4px;display:block;overflow:hidden;background:url("../images/img/icon.png") no-repeat 0 -218px;margin-left:-4px;}
+.quickMenu dl dd a{height:23px;line-height:23px;display:block;text-align:center;font-size:11px;background:#d0d8dd url("../images/txt/normal_title.png") no-repeat;border-top:1px solid #fff;border-bottom:1px solid #a0a4a5;color:#494d4f;font-family:"nanum";font-size:11px;}
+.quickMenu dl dd.q01 a{background-position:-1px -179px;}
+.quickMenu dl dd.q02 a{background-position:11px -204px;}
+.quickMenu dl dd.q03 a{background-position:8px -227px;}
+.quickMenu dl dd.q04 a{background-position:22px -253px;}
+.quickMenu dl dd.q05 a{background-position:18px -277px;}
+
+/* ADS Left */
+.adsLeft{position:absolute;left:-164px;top:0;z-index:300;width:160px;height:600px; text-align:center;}

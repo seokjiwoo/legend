@@ -1,0 +1,58 @@
+.header{
+	position:relative;height:46px;border-bottom:4px solid #da1125;text-align:center;
+	background: #032332; /* Old browsers */
+	background: -moz-linear-gradient(left,  #032332 0%, #004b60 50%, #032332 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#032332), color-stop(50%,#004b60), color-stop(100%,#032332)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #032332 0%,#004b60 50%,#032332 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #032332 0%,#004b60 50%,#032332 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #032332 0%,#004b60 50%,#032332 100%); /* IE10+ */
+	background: linear-gradient(to right,  #032332 0%,#004b60 50%,#032332 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032332', endColorstr='#032332',GradientType=1 ); /* IE6-9 */
+}
+.header .title01{height:46px;line-height:46px;display:inline-block;font-size:16px;color:#4efcf2;padding-left:30px;background:url("../images/ico_lock.png") no-repeat 0 11px;background-size:17px}
+.header .title02{height:46px;line-height:46px;display:inline-block;font-size:16px;color:#4efcf2;padding-left:30px;background:url("../images/ico_zoom.png") no-repeat 0 11px;background-size:23px}
+.header .menu,.header .home{position:absolute;display:block;}
+
+.header .menu{left:12px;top:15px;width:23px;height:20px;background:url("../images/btn_menu.png") no-repeat 0 0;background-size:23px;}
+.header .home{right:12px;top:7px;width:32px;height:32px;background:url("../images/btn_home.png") no-repeat 0 0;background-size:32px;}
+
+.tabMenu{overflow:hidden;background:#136b7f}
+.tabMenu li{width:50%;float:left;padding:5px 0;text-align:center;}
+.tabMenu li:first-child{background:url("../images/bg_tab_line.png") no-repeat right center;}
+.tabMenu li a{padding:4px 10px;display:inline-block;color:#5db8b9;font-size:14px;}
+.tabMenu li.on a{background:#003c58;border-radius:5px;color:#4efcf2;}
+
+.consentArea{padding:6px;}
+h2.title{font-size:14px;font-family:"nanumbd";}
+.whiteBox{padding:10px 20px;background:#fff;}
+.whiteBox2{padding:10px 0;background:#fff;}
+.whiteBox2 > ul > li > div{padding:0 20px;}
+.scrollBox{position:relative;height:70px;padding:8px 8px;overflow:hidden;overflow-y:scroll;background:#eee;border:1px solid #898989;}
+.scrollCon{font-size:11px;}
+.scrollCon strong{display:block;color:#303030;font-family:"nanumbd";}
+.scrollCon p{margin-top:5px;}
+.scrollCon ul li{margin-top:2px;}
+.scrollCon ul li:first-child{margin-top:0;}
+
+.checkList li{overflow:hidden;}
+.checkList li input[type="checkbox"]{float:left;margin-right:5px;}
+.checkList label{width:90%;float:left;font-size:12px;color:#303030;}
+
+.inp_box{position:relative;padding-right:78px;}
+.inp_box .btn_type02{position:absolute;right:0;top:0;}
+.inp_list{overflow:hidden;}
+.inp_list li{width:32%;float:left;}
+.inp_list li:first-child{width:34%;margin-right:1%;}
+.inp_list li:first-child + li{margin-right:1%;}
+
+.radio_list{overflow:hidden;}
+.radio_list li{float:left;}
+.radio_list li:first-child{margin-right:10px;}
+
+.footer .bnr img{width:100%;max-width:100%;}
+.selectList{position:relative;height:25px;background:#a7020e;}
+.selectList ul{display:none;}
+.selectList .sel_btn{display:block;height:25px;line-height:25px;color:#fff;background:url("../images/bg_select_line.png") no-repeat 32px 0;}
+.selectList .sel_btn span{display:inline-block;padding-left:42px;background:url("../images/bg_arrow_top.png") no-repeat 10px 7px;background-size:10px;}
+.selectList .obj{position:absolute;right:0;top:-22px;width:60px;display:block;}
+.selectList .obj img{width:100%;max-width:100%;}

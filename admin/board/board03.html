@@ -1,0 +1,236 @@
+<!--[if IE 7]><html class="ie7" lang="ko"><![endif]-->
+<!--[if IE 8]><html class="ie8" lang="ko"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="ko"><![endif]-->
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>레전드닷컴 관리자</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+	
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header">
+			<div class="h_top">
+				<div class="logo_section">
+					<a href="#" class="logo"><img src="../images/logo.png" alt="레전드관리자" /></a>
+					<p class="condition"><span class="bold">sports2i</span> 님께서 사용중이십니다.(2015-04-29 오후 2:10:10) <a href="#" class="btn st1"><span>로그아웃</span></a></p>
+				</div>
+			</div>
+			<div class="h_btm">
+				<div class="nav_section">
+					<ul class="gnb">
+						<li><a href="#">핫이슈</a></li>
+						<li><a href="#">Legend 칼럼</a></li>
+						<li><a href="#">TEAM 타임라인</a></li>
+						<li><a href="#">투아이 스페셜</a></li>
+						<li class="on"><a href="#">게시판 관리</a></li>
+						<li><a href="#">회원 관리</a></li>
+						<li><a href="#">이벤트 관리</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- container -->
+		<div class="container">
+			<div class="lnb_section">
+				<h2 class="page_name">게시판 관리</h2>
+				<ul class="lnb">
+					<li><a href="#">공지사항</a></li>
+					<li class="on"><a href="#">베스트 게시판</a></li>
+					<li><a href="#">BTL분석 게시판</a></li>
+					<li><a href="#">자유 게시판</a></li>
+					<li><a href="#">야한 갤러리</a></li>
+					<li><a href="#">금칙어 관리</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<h2 class="tit_type01">베스트 게시판</h2>
+				<div class="input_align">
+					<ul>
+						<li>
+							<span class="select">
+								<select>
+									<option>제목+내용</option>
+								</select>
+							</span>
+						</li>
+						<li><input type="text" class="w162"></li>
+						<li><a href="#" class="btn st5"><span>검색</span></a></li>
+					</ul>
+				</div>
+				<div class="tables01 mt15">
+					<table summary="리스트 표(순번,분류,제목,등록일,작성자,조회수,삭제)">
+						<caption>리스트 표</caption>
+						<colgroup>
+							<col width="5%" />
+							<col width="5%" />
+							<col width="61%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="5%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순번</th>
+								<th>분류</th>
+								<th>제목</th>
+								<th>등록일</th>
+								<th>작성자</th>
+								<th>조회수</th>
+								<th>삭제</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>16</td>
+								<td>자유</td>
+								<td class="tal"><a href="#" class="link">하위타선 맹활약 최주환, 5연타석 안타 행진</a></td>
+								<td>2015.04.28</td>
+								<td><a href="#" class="name layer_pop_btn" data-name="member_info">홍길동</a></td>
+								<td>3,891</td>
+								<td><a href="#" class="btn st3"><span>삭제</span></a></td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>자유</td>
+								<td class="tal"><a href="#" class="link">하위타선 맹활약 최주환, 5연타석 안타 행진</a></td>
+								<td>2015.04.28</td>
+								<td><a href="#" class="name">홍길동</a></td>
+								<td>3,891</td>
+								<td><a href="#" class="btn st3"><span>삭제</span></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging mt30">
+					<a href="#" class="start"></a>
+					<a href="#" class="prev"></a>
+					<a href="#" class="num on">1</a>
+					<a href="#" class="num">2</a>
+					<a href="#" class="num">3</a>
+					<a href="#" class="num">4</a>
+					<a href="#" class="num">5</a>
+					<a href="#" class="num">6</a>
+					<a href="#" class="num">7</a>
+					<a href="#" class="num">8</a>
+					<a href="#" class="num">9</a>
+					<a href="#" class="num">10</a>
+					<a href="#" class="next"></a>
+					<a href="#" class="end"></a>
+				</div>
+			</div>
+		</div>
+		<!-- // container -->
+		
+		<!-- layer popup -->
+		<div class="layer_popup" id="member_info">
+			<h2 class="title">회원정보</h2>
+			<div class="pop_con">
+				<div class="tables02">
+					<table summary="회원정보 안내표(아이디,권한등급,이름,성별,핸드폰,가입일,등급,응원팀,누적포인트,현재포인트)">
+						<caption>회원정보 안내표</caption>
+						<colgroup>
+							<col width="18%" />
+							<col width="32%" />
+							<col width="18%" />
+							<col width="32%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>아이디</th>
+								<td colspan="3"><a href="#" class="id_mail">abcdefg12345@sports2i.com</a></td>
+							</tr>
+							<tr>
+								<th>닉네임</th>
+								<td>야구야구야구신동</td>
+								<th>권한등급</th>
+								<td>
+									<span class="select">
+										<select class="w92">
+											<option>일반</option>
+										</select>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>이름</th>
+								<td>홍길동</td>
+								<th>성별</th>
+								<td>남</td>
+							</tr>
+							<tr>
+								<th>핸드폰</th>
+								<td>010-1234-5678</td>
+								<th>가입일</th>
+								<td>2015-03-15</td>
+							</tr>
+							<tr>
+								<th>등급</th>
+								<td>올스타</td>
+								<th>응원팀</th>
+								<td>삼성</td>
+							</tr>
+							<tr>
+								<th>누적포인트</th>
+								<td>5,110</td>
+								<th>현재포인트</th>
+								<td>4,800</td>
+							</tr>
+							<tr>
+								<th>불량이력</th>
+								<td>2015.03.10</td>
+								<th>리스트번호</th>
+								<td>158</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h3 class="tit03 mt30">불량이력</h3>
+				<div class="tables02 mt10">
+					<table summary="불량이력 안내표(불량이력)">
+						<caption>불량이력 안내표</caption>
+						<colgroup>
+							<col width="18%" />
+							<col width="32%" />
+							<col width="18%" />
+							<col width="32%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>불량이력</th>
+								<td>2015.03.10</td>
+								<th>불량이력</th>
+								<td><a href="#">내용보기</a></td>
+							</tr>
+							<tr>
+								<th>불량이력</th>
+								<td>2015.03.10</td>
+								<th>불량이력</th>
+								<td><a href="#">내용보기</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="tac mt20">
+					<a href="#" class="btn st4 layer_close"><span>저장</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // layer popup -->
+
+	</div>
+	<!-- // wrapper -->
+</body>
+</html>
